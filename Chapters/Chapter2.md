@@ -42,6 +42,38 @@ To ensure forward compatibility in NR, certain resource sets can be reserved, al
 
 To reduce power consumption, user equipment (UE) may use wide bandwidth for short bursts and narrow bandwidth otherwise. This bandwidth adaptation is managed by the concept of bandwidth parts, subsets of contiguous resource blocks (RBs). Up to four bandwidth parts can be configured for each UL and DL, but only one is active per direction at a time. This allows the UE to switch dynamically between narrow and wide bandwidths as needed.
 
+## 2.3. Modulation, Channel coding, Slot configuration
+
+### 2.3.1. **Modulation schemes** with **Gray Coded** mapping
+|![](../Imgs/Chapter2/PSK.png)|![](../Imgs/Chapter2/16-QAM.png)|
+|:-:|:-:|
+|PSK|16-QAM|
+
+- *Phase shift keying (PSK)*: Binary PSK (BPSK), Quadrature PSK (QPSK), or
+- *Quadrature amplitude modulation (QAM)*: M = 16, 64, 256.
+
+### 2.3.2. **Channels control**
+|![](../Imgs/Chapter2/Channel%20Coding.png)|
+|:-:|
+|Channel Coding|
+
+- *Reed-Muller block codes (RM codes)*, and
+- *Cyclic redundancy check (CRC) assisted polar codes*.
+
+### 2.3.3. **Data channels**
+Use rate compatible quasi-cyclic low-density parity-check (LDPC) codes.
+
+**Duplexing options**:
+- *Frequency division duplex (FDD)*
+- *Time division duplex (TDD)*:
+    - *Semi-statically configured TDD*: for large over-the-rooftop cells
+    - *Dynamic TDD*: or small/isolated cells
+
+TDD operations are enabled by flexible slot configuration in NR. OFDM symbols in a slot can be configured as *DL*, *UL*, or *flexible*. DL transmissions can occur in *DL* or *flexible* symbols, and UL transmissions can occur in *UL* or *flexible* symbols. Cell-specific and UE-specific RRC configurations determine the UL/DL allocations.
+
+
+
+
 |[<<< Chapter 1](./Chapter1.md)|[Home](../README.md)|[Chapter 3 >>>](./Chapter3.md)|
 |-|-|-|
 
