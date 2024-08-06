@@ -1,3 +1,6 @@
+|[Home](../README.md)|[Chapter 3 >>>]()|
+|-|-|
+
 # Chapter 1: 3GPP 5G NR
 The **5th generation (5G) wireless access technology** address variety of **scenarios**:
 - Enhanced Mobile Boardband (eMBB)
@@ -12,7 +15,7 @@ The **5th generation (5G) wireless access technology** address variety of **scen
 - Dynamic time division multiplexing (TDD)
 
 **NR radio interface** consists of:
-- Layer 1: Physical layer *(described in TS 38.200 series: [5G NR Physical layer General description](../Docs/5G%20NR%20Physical%20layer%20General%20description.pdf), [5G NR Physical layer procedures for data](),...)*
+- Layer 1: Physical layer *(described in TS 38.200 series: [5G NR Physical layer General description](../Docs/5G%20NR%20Physical%20layer%20General%20description.pdf), 5G NR Physical layer procedures for data,...)*
 - Higher layer (described in TS 38.300 series):
     - Layer 2: Medium access control
     - Layer 3: Radio resource control (RRC)
@@ -20,3 +23,7 @@ The **5th generation (5G) wireless access technology** address variety of **scen
 |![](../Imgs/Chapter1/Radio%20interface%20protocol%20architecture%20around%20the%20physical%20layer.png)|
 |:-:|
 |Radio interface protocol architecture around the physical layer|
+
+
+|[Home](../README.md)|[Chapter 3 >>>]()|
+|-|-|
