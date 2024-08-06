@@ -1,4 +1,4 @@
-|[Home](../README.md)|[Chapter 3 >>>]()|
+|[Home](../README.md)|[Chapter 2 >>>](./Chapter2.md)|
 |-|-|
 
 # Chapter 1: 3GPP 5G NR
@@ -25,5 +25,5 @@ The **5th generation (5G) wireless access technology** address variety of **scen
 |Radio interface protocol architecture around the physical layer|
 
 
-|[Home](../README.md)|[Chapter 3 >>>]()|
+|[Home](../README.md)|[Chapter 2 >>>](./Chapter2.md)|
 |-|-|
