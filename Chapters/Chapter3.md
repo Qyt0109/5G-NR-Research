@@ -122,7 +122,7 @@
    - This facilitates forward and backward compatibility, especially when NR and LTE share the same carrier
 
 3.3.1.5. **Physical Layer Processing**:
-   - Summarized in the left part of Figure 4
+   - Summarized in the left part of this section figure
 
 ### 3.3.2. Physical Uplink Shared Channel (PUSCH)
 
