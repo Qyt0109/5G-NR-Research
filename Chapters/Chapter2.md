@@ -55,23 +55,27 @@ To reduce power consumption, user equipment (UE) may use wide bandwidth for shor
 ### 2.3.2. **Channels control**
 |![](../Imgs/Chapter2/Channel%20Coding.png)|
 |:-:|
-|Channel Coding|
+|Channel Control|
 
 - *Reed-Muller block codes (RM codes)*, and
 - *Cyclic redundancy check (CRC) assisted polar codes*.
 
 ### 2.3.3. **Data channels**
+|![](../Imgs/Chapter2/LDPC.png)|
+|:-:|
+|Channel Coding|
 Use rate compatible quasi-cyclic low-density parity-check (LDPC) codes.
 
-**Duplexing options**:
+### 2.3.4 **Duplexing options**:
+|![](../Imgs/Chapter2/Duplex.png)|
+|:-:|
+|Duplexing|
 - *Frequency division duplex (FDD)*
 - *Time division duplex (TDD)*:
     - *Semi-statically configured TDD*: for large over-the-rooftop cells
-    - *Dynamic TDD*: or small/isolated cells
+    - *Dynamic TDD*: for small/isolated cells
 
 TDD operations are enabled by flexible slot configuration in NR. OFDM symbols in a slot can be configured as *DL*, *UL*, or *flexible*. DL transmissions can occur in *DL* or *flexible* symbols, and UL transmissions can occur in *UL* or *flexible* symbols. Cell-specific and UE-specific RRC configurations determine the UL/DL allocations.
-
-
 
 
 |[<<< Chapter 1](./Chapter1.md)|[Home](../README.md)|[Chapter 3 >>>](./Chapter3.md)|
