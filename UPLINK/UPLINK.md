@@ -16,7 +16,7 @@ x<sub>2</sub>(n + 31) = (x<sub>2</sub>(n + 3) + x<sub>2</sub>(n + 2) + x<sub>2</
 
 Where *N<sub>C</sub>* = 1600 and the first m-sequence *x<sub>1</sub>(n)* shall be initialized with *x<sub>1</sub>(0)* = 1, *x<sub>1</sub>(n)* = 0, n = 1, 2,... , 30.
 
-The initialization of the second m-sequence *x<sub>2</sub>(n)*, is denoted by *c<sub>init</sub>* = \sum_{i=0}^{30} *x<sub>2</sub>(i)*.2<sup>i</sup> with the value depending on the application of the sequence.
+The initialization of the second m-sequence *x<sub>2</sub>(n)*, is denoted by *c<sub>init</sub>* = $\sum_{i=0}^{30}$ *x<sub>2</sub>(i)*.2<sup>i</sup> with the value depending on the application of the sequence.
 
 ### 5.3 OFDM baseband signal generation
 
