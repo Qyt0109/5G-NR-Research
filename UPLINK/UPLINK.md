@@ -22,7 +22,7 @@ The initialization of the second m-sequence *x<sub>2</sub>(n)*, is denoted by *c
 
 The low-PAPR sequence $r^{(\alpha, \delta)}_{u, v}$ is defined by a cyclic shift $\alpha$ of a base sequence $\bar{r}_{u, v}(n)$ according to
 
-$r^{(\alpha, \delta)}_{u, v}(n) = e^{j \alpha n}.\bar{r}_{u, v}(n)$, 0 ≤ n < $M_{ZC}$
+$$r^{(\alpha,\delta)}_{u,v}(n)=e^{j\alpha n}.\bar{r}_{u,v}(n),0≤n<M_{ZC}$$
 
 where $M_{ZC} = mN^{RB}_{sc}/2^{\delta}$ is the length of the sequence. Multiple sequences are defiend from a single base sequence through different values of $\alpha$ and $\delta$.
 
