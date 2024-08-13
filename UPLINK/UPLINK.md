@@ -18,6 +18,16 @@ Where *N<sub>C</sub>* = 1600 and the first m-sequence *x<sub>1</sub>(n)* shall b
 
 The initialization of the second m-sequence *x<sub>2</sub>(n)*, is denoted by *c<sub>init</sub>* = $\sum_{i=0}^{30}$ *x<sub>2</sub>(i)*.2<sup>i</sup> with the value depending on the application of the sequence.
 
+<h4 id="Low-PAPR-sequence-generation-type-1"> 5.2.2 Low-PAPR sequence generation type 1</h4>
+
+The low-PAPR sequence $r^{(\alpha, \delta)}_{u, v}$ is defined by a cyclic shift $\alpha$ of a base sequence $\bar{r}_{u, v}(n)$ according to
+
+$r^{(\alpha, \delta)}_{u, v}(n) = e^{j \alpha n}.\bar{r}_{u, v}(n)$, 0 ≤ n < $M_{ZC}$
+
+where $M_{ZC} = mN^{RB}_{sc}/2^{\delta}$ is the length of the sequence. Multiple sequences are defiend from a single base sequence through different values of $\alpha$ and $\delta$.
+
+Base sequence $\bar{r}_{u, v}(n)$ are devided into groups, where $u\in\{0, 1,... , 29\}$ is the group number and *v* is the base sequence number within group such that each group contains one base sequence (*v* = 0) of each length $M_{ZC} = mN^{RB}_{sc}/2^{\delta}$. The definition of the base sequence $\bar{r}_{u, v}(0)$, ... $\bar{r}_{u, v}(M_{ZC}-1)$ depends on the sequence length $M_{ZC}$.
+
 ### 5.3 OFDM baseband signal generation
 
 ### 5.4 Modulation and upconversion
@@ -86,7 +96,7 @@ PUCCH supported formats:
 
 ### 6.3.2.2 Sequence and cyclic shift hopping
 
-PUCCH formats 0, 1, 3 and 4 use sequences *r<sup>(α, δ)</sup><sub>u, v</sub>* with *δ* = 0 where the sequence group *u* and the sequence number *v* depend on the [sequence hopping](#group-and-sequence-hopping) and the cyclic shift *α*.
+PUCCH formats 0, 1, 3 and 4 use [sequences $r^{(\alpha, \delta)}_{u, v}$](#Low-PAPR-sequence-generation-type-1) with *δ* = 0 where the sequence group *u* and the sequence number *v* depend on the [sequence hopping](#group-and-sequence-hopping) and the cyclic shift *α*.
 depends on the [cyclic shift hopping](#cyclic-shift-hopping).
 
 <h4 id="group-and-sequence-hopping"> 6.3.2.2.1 Group and sequence hopping</h4>
