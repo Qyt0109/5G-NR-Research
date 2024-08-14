@@ -20,15 +20,14 @@ The initialization of the second m-sequence *x<sub>2</sub>(n)*, is denoted by *c
 
 #### <h4 id="Low-PAPR-sequence-generation-type-1"> 5.2.2 Low-PAPR sequence generation type 1</h4>
 
-The low-PAPR sequence
-$r^{(\alpha,\delta)}_{u,v}$
+The low-PAPR sequence ![equation](https://latex.codecogs.com/svg.latex?r^{(\alpha,\delta)}_{u,v})
 is defined by a cyclic shift
-$\alpha$
+![equation](https://latex.codecogs.com/svg.latex?\alpha)
 of a base sequence
-$\bar{r}_{u,v}(n)$
+![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(n))
 according to
 
-$r^{(\alpha,\delta)}_{u,v}(n)=e^{j\alpha n}.\bar{r}_{u,v}(n),0≤n<M_{ZC}$
+![equation](https://latex.codecogs.com/svg.latex?&space;r^{(\alpha,\delta)}_{u,v}(n)=e^{j\alpha&space;n}.\bar{r}_{u,v}(n),0&space;n<M_{ZC})
 
 where
 $M_{ZC} = mN^{RB}_{sc}/2^{\delta}$
