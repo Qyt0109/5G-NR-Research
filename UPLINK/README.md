@@ -4,7 +4,7 @@
 
 ### 5.2 Sequence generation
 
-<h4 id="Pseudo-random-sequence-generation"> 5.2.1 Pseudo-random sequence generation</h4>
+#### <h4 id="Pseudo-random-sequence-generation"> 5.2.1 Pseudo-random sequence generation</h4>
 
 Generic pseudo-random sequences are defined by a length-31 Gold sequence. The output sequence *c(n)* of length *M<sub>PN</sub>* where *n* = 0, 1,... , *M<sub>PN</sub> - 1* is defined by:
 
@@ -93,7 +93,46 @@ where the value of $\varphi(n)$ is given by Tables below:
 |:-:|
 |![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM_{ZC}=24)|
 
-#### 5.2.2 Low-PAPR sequence generation type 2
+#### 5.2.3 Low-PAPR sequence generation type 2
+
+The low-PAPR sequence $r^{\alpha,\delta}_{u,v}(n)=\bar{r}_{u,v}(n),0\le\text{}n<M$
+
+where $M=mN_{sc}^{RB}/2^{\delta}$ is the length of the sequence
+
+Base sequence $\bar{r}_{u,v}(n)$ is divided into groups, where $u\in\{0,1,...,29\}$ is the group number and *v* is the base sequence number within the group, such that each group contains one base sequence (*v*=0) of length $M=mN_{sc}^{RB}/2^{\delta}$, $\frac{1}{2}\le\text{}\frac{m}{2^{\delta}}$. The sequence $\bar{r}_{u,v}(0),...\bar{r}_{u,v}(M-1)$ is defined by
+
+$$\bar{r}_{u,v}(n)=\frac{1}{\sqrt{M}}\sum_{i=0}^{M-1}\tilde{r}_{u,v}(i)e^{-j\frac{2\pi\text{in}}{M}},n=0,...,M-1$$
+
+where the definition of $\tilde{r}_{u,v}(i)$ depends on the sequence length
+
+##### 5.2.3.1 Sequences of length 30 or larger
+
+for $M\ge\text{}30$, the sequence $\tilde{r}_{u,v}(i)$ is obtained as the complex-valued modulations symbols resulting from $\pi/2$-BPSK modulation as defined in [5.2.1 Pseudo-random sequence generation](#Pseudo-random-sequence-generation), initialized with $c_{init}$.
+
+##### 5.2.3.2 Sequences of length less than 30
+
+For $M=6$,
+$$\tilde{r}_{u,v}(i)=e^{j\varphi(i)\frac{\pi}{8}},0\le\text{}i\le\text{}M-1$$
+
+where $\varphi(i)$ is given by:
+
+|![](./imgs/M6.png)|
+|:-:|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM=6)|
+
+For $M\in\{12,18,24\}$, the sequence $\tilde{r}_{u,v}(i)$ is obtained as the complex-valued modulations symbols resulting from π/2-BPSK modulation as defined in [clause 5.1.1]() applied to the binary sequence $b(i)$ given by Tables below:
+
+|![](./imgs/M12.png)|
+|:-:|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM=12)|
+
+|![](./imgs/M18.png)|
+|:-:|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM=18)|
+
+|![](./imgs/M24.png)|
+|:-:|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM=24)|
 
 ### 5.3 OFDM baseband signal generation
 
