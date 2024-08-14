@@ -178,7 +178,7 @@ intraSlotFrequencyHopping, $n_{hop}=0$ for the first hop and $n_{hop}=1$ for the
 ###### <h6 id="cyclic-shift-hopping"> 6.3.2.2.2 Cyclic shift hopping</h6>
 
 The cyclic shift $\alpha$ varies as a function of the symbol and slot number according to
-$$\alpha _{l} = \frac{2\pi}{N^{RB}_{sc}}((m_{0}+m_{cs}+m_{int}+n_{cs}(n^{\mu}_{s,f'}l+l'))\ mod\ N^{RB}_{sc})$$
+$$\alpha_{l}=\frac{2\pi}{N^{RB}_{sc}}((m_{0}+m_{cs}+m_{int}+n_{cs}(n^{\mu}_{s,f'}l+l'))\text{\space}mod\text{\space}N^{RB}_{sc})$$
 
 where:
 - $n^{\mu}_{s,f}$ is the slot number in the radio frame
