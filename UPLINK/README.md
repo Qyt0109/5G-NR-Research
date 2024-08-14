@@ -30,35 +30,41 @@ according to
 ![equation](https://latex.codecogs.com/svg.latex?&space;r^{(\alpha,\delta)}_{u,v}(n)=e^{j\alpha&space;n}.\bar{r}_{u,v}(n),0&space;n<M_{ZC})
 
 where
-$M_{ZC} = mN^{RB}_{sc}/2^{\delta}$
+![equation](https://latex.codecogs.com/svg.latex?M_{ZC}=mN^{RB}_{sc}/2^{\delta})
 is the length of the sequence. Multiple sequences are defiend from a single base sequence through different values of
 $\alpha$
 and
 $\delta$.
 
 Base sequence
-$\bar{r}_{u,v}(n)$
+![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(n))
 are devided into groups, where
-$u\in\{0,1,...,29\}$
+![equation](https://latex.codecogs.com/svg.latex?u\in\{0,1,...,29\})
 is the group number and *v* is the base sequence number within group such that each group contains one base sequence (*v* = 0) of each length
-$M_{ZC}=mN^{RB}_{sc}/2^{\delta}$
+![equation](https://latex.codecogs.com/svg.latex?M_{ZC}=mN^{RB}_{sc}/2^{\delta})
 . The definition of the base sequence
-$\bar{r}_{u,v}(0),...\bar{r}_{u,v}(M_{ZC}-1)$
+![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(0),...\bar{r}_{u,v}(M_{ZC}-1))
 depends on the sequence length
 $M_{ZC}$
 .
 
 ##### 5.2.2.1 Base sequences of length 36 or larger
 
-For $M_{ZC}≥3N^{RB}_{SC}$, the base sequence $\bar{r}_{u, v}(0),... \bar{r}_{u, v}(M_{ZC}-1)$ is given by
+For
+![equation](https://latex.codecogs.com/svg.latex?M_{ZC}\ge3N^{RB}_{SC})
+, the base sequence
+![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(0),...,\bar{r}_{u,v}(M_{ZC}-1))
+is given by
 
-$$\bar{r}_{u, v}(n) = x_{q}(n\ mod\ N_{ZC})$$
-$$x_{q}(m) = e^{-j\frac{\pi qm(m+1)}{N_{ZC}}}$$
+![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(n)=x_{q}(n\text{\space}mod\text{\space}N_{ZC}))
+
+![equation](https://latex.codecogs.com/svg.latex?x_{q}(m)=e^{-j\frac{\pi\text{qm}(m+1)}{N_{ZC}}})
 
 where
 
-$$q=\lfloor(\bar{q}+1/2)\rfloor+v.(-1)^{2\bar{q}}$$
-$$\bar{q} = N_{ZC}.(u + 1)/31$$
+![equation](https://latex.codecogs.com/svg.latex?q=\lfloor(\bar{q}+1/2)\rfloor+v.(-1)^{2\bar{q}})
+
+![equation](https://latex.codecogs.com/svg.latex?\bar{q}=N_{ZC}.(u+1)/31)
 
 The length $N_{ZC}$ is given by the largest prime number such that $N_{ZC} < M{ZC}$.
 
