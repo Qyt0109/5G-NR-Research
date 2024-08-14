@@ -39,7 +39,7 @@ $\delta$.
 Base sequence
 ![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(n))
 are devided into groups, where
-![equation](https://latex.codecogs.com/svg.latex?u\in\{0,1,...,29\})
+![equation](https://latex.codecogs.com/svg.image?u\in\left\{0,1,...29\right\})
 is the group number and *v* is the base sequence number within group such that each group contains one base sequence (*v* = 0) of each length
 ![equation](https://latex.codecogs.com/svg.latex?M_{ZC}=mN^{RB}_{sc}/2^{\delta})
 . The definition of the base sequence
