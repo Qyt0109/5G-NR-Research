@@ -78,19 +78,20 @@ where the value of $\varphi(n)$ is given by Tables below:
 
 |![](./imgs/MZC6.png)|
 |:-:|
-|$\varphi(n)$ for $M_{ZC}=6$|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM_{ZC}=6)|
 
 |![](./imgs/MZC12.png)|
 |:-:|
-|$\varphi(n)$ for $M_{ZC}=12$|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM_{ZC}=12)|
+
 
 |![](./imgs/MZC18.png)|
 |:-:|
-|$\varphi(n)$ for $M_{ZC}=18$|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM_{ZC}=18)|
 
 |![](./imgs/MZC24.png)|
 |:-:|
-|$\varphi(n)$ for $M_{ZC}=24$|
+|![equation](https://latex.codecogs.com/svg.latex?\varphi(n)forM_{ZC}=24)|
 
 #### 5.2.2 Low-PAPR sequence generation type 2
 
