@@ -202,17 +202,23 @@ PUCCH supported formats:
 
 ##### 6.3.2.2 Sequence and cyclic shift hopping
 
-PUCCH formats 0, 1, 3 and 4 use [sequences $r^{(\alpha, \delta)}_{u, v}$](#Low-PAPR-sequence-generation-type-1) with *δ* = 0 where the sequence group *u* and the sequence number *v* depend on the [sequence hopping](#group-and-sequence-hopping) and the cyclic shift *α*.
-depends on the [cyclic shift hopping](#cyclic-shift-hopping).
+PUCCH formats 0, 1, 3 and 4 use $r^{(\alpha,\delta)}_{u,v}$ ([5.2.2 Low PAPR sequence generation type 1](#Low-PAPR-sequence-generation-type-1)) with *δ* = 0 where the sequence group *u* and the sequence number *v* depend on the [6.3.2.2.1 Group and sequence hopping](#group-and-sequence-hopping) and the cyclic shift *α* depends on the [6.3.2.2.2 Cyclic shift hopping](#cyclic-shift-hopping).
 
 ###### <h6 id="group-and-sequence-hopping"> 6.3.2.2.1 Group and sequence hopping</h6>
 
 The sequence group *u* = (*f<sub>gh</sub>* + *f<sub>ss</sub>*) mod 30 and the sequence number *v* within the group depends on the higher-layer parameter *pucch-GroupHopping*:
-- if *pucch-GroupHopping* equal 'neither' $$f_{gh}=0$$ $$f_{ss}=n_{ID}\ mod\ 30$$ $$v=0$$
+- if *pucch-GroupHopping* equal 'neither'
+
+$$f_{gh}=0$$
+
+$$f_{ss}=n_{ID}\ mod\ 30$$
+
+$$v=0$$
+
 where $n_{ID}$ is given by the higher-layer parameter *hoppingId* if congigured, otherwise $n_{ID}=N^{cell}_{ID}$
 
 - if *pucch-GroupHopping* equal 'enable' $$f_{gh}=0$$ $$f_{ss}=n_{ID}\ mod\ 30$$ $$v=c(2n^{\mu}_{s,f}+n_{hop})$$
-where the pseudo-random sequence *c(i)* is defined by [THIS](#Pseudo-random-sequence-generation) and shall be initialized at the beginning of each radio frame with $c_{init}=2^{5}\lfloor n_{ID}/30\rfloor+(n_{ID}\ mod\ 30)$ where $n_{ID}$ is given by the higher-layer parameter intraSlotFrequencyHopping. If frequency hopping is enabled by the higher-layer parameter
+where the pseudo-random sequence *c(i)* is defined by [5.2.1 Pseudo-random sequence generation](#Pseudo-random-sequence-generation) and shall be initialized at the beginning of each radio frame with $c_{init}=2^{5}\lfloor n_{ID}/30\rfloor+(n_{ID}\ mod\ 30)$ where $n_{ID}$ is given by the higher-layer parameter intraSlotFrequencyHopping. If frequency hopping is enabled by the higher-layer parameter
 intraSlotFrequencyHopping, $n_{hop}=0$ for the first hop and $n_{hop}=1$ for the second hop.
 
 ###### <h6 id="cyclic-shift-hopping"> 6.3.2.2.2 Cyclic shift hopping</h6>
