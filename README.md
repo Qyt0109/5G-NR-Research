@@ -9,3 +9,5 @@ The next generation of wireless communication, 5G or New Radio (NR)
 ## [Chapter 1](./Chapters/Chapter1.md)
 ## [Chapter 2](./Chapters/Chapter2.md)
 ## [Chapter 3](./Chapters/Chapter3.md)
+
+## [Uplink](./UPLINK/README.md)
