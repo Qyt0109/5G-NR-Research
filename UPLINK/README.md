@@ -70,8 +70,9 @@ The length $N_{ZC}$ is given by the largest prime number such that $N_{ZC} < M{Z
 
 ##### 5.2.2.2 Base sequences of length less than 36
 
-For $M_{ZC}\in\{6, 12, 18, 24\}$ the base sequence is given by
-$$\bar{r}_{u, v}(n)=e^{j\varphi(n)pi/4},0≤n≤M_{ZC}-1$$
+For
+![equation](https://latex.codecogs.com/svg.latex?M_{ZC}\in\{6,12,18,24\}) the base sequence is given by
+![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(n)=e^{j\varphi(n)\pi/4},0\le\text{}n\le\text{}M_{ZC}-1)
 
 where the value of $\varphi(n)$ is given by Tables below:
 
