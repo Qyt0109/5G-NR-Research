@@ -27,7 +27,7 @@ of a base sequence
 ![equation](https://latex.codecogs.com/svg.latex?\bar{r}_{u,v}(n))
 according to
 
-![equation](https://latex.codecogs.com/svg.latex?&space;r^{(\alpha,\delta)}_{u,v}(n)=e^{j\alpha&space;n}.\bar{r}_{u,v}(n),0&space;n<M_{ZC})
+![equation](https://latex.codecogs.com/svg.latex?&space;r^{(\alpha,\delta)}_{u,v}(n)=e^{j\alpha&space;n}.\bar{r}_{u,v}(n),0\le\text{}n<M_{ZC})
 
 where
 ![equation](https://latex.codecogs.com/svg.latex?M_{ZC}=mN^{RB}_{sc}/2^{\delta})
